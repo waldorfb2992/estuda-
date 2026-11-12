@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cadastre, edite, filtre e conclua suas atividades de estudo.">
+  <title>Estuda+ | Atividades</title><link rel="stylesheet" href="assets/style.css"><script src="assets/app.js" defer></script>
+</head>
+<body data-page="tasks">
+  <a class="skip-link" href="#conteudo">Pular para conteúdo</a>
+  <header class="site-header"><div class="container header-inner"><a class="brand" href="index.html"><span class="brand-mark">✦</span> Estuda<span class="brand-plus">+</span></a><button class="menu-toggle" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">☰</button><nav class="main-nav" id="menu-principal" aria-label="Menu principal"><a class="nav-link" href="index.html">Início</a><a class="nav-link active" aria-current="page" href="atividades.html">Atividades</a><a class="nav-link" href="contato.html">Contato</a><a class="nav-link nav-extra" href="materias.php">Matérias <span class="mini-tag">PHP extra</span></a></nav></div></header>
+  <main class="container page-content" id="conteudo">
+    <div class="page-banner"><div><span class="section-kicker">CENTRAL DE ESTUDOS</span><h1>Minhas atividades <span class="sparkle">✳</span></h1><p>Planeje seu dia e veja tudo o que você já conquistou.</p></div><span class="banner-decoration" aria-hidden="true">✓</span></div>
+    <div class="task-layout">
+      <section class="surface form-panel" aria-labelledby="form-title"><div class="panel-heading"><span class="panel-icon">＋</span><div><h2 id="form-title">Nova atividade</h2><p>Preencha os detalhes da tarefa</p></div></div>
+        <form id="task-form" novalidate>
+          <input type="hidden" id="task-id">
+          <div class="field"><label for="task-title">Nome da atividade *</label><input id="task-title" maxlength="90" type="text" placeholder="Ex.: Estudar para a prova" required></div>
+          <div class="field"><label for="task-subject">Matéria *</label><select id="task-subject" required><option value="">Selecione uma matéria</option><option>Matemática</option><option>Português</option><option>História</option><option>Programação</option><option>Outras</option></select></div>
+          <div class="field-row"><div class="field"><label for="task-due">Prazo *</label><input id="task-due" type="date" required></div><div class="field"><label for="task-priority">Prioridade</label><select id="task-priority"><option value="normal">Normal</option><option value="alta">Alta</option><option value="baixa">Baixa</option></select></div></div>
+          <div class="field"><label for="task-notes">Anotações (opcional)</label><textarea id="task-notes" maxlength="240" rows="3" placeholder="Algo que você não pode esquecer..."></textarea></div>
+          <p class="form-error" id="task-error" role="alert" hidden></p><button class="btn btn-primary btn-full" type="submit" id="task-submit">＋ Adicionar atividade</button><button class="btn btn-text btn-full" type="button" id="task-cancel" hidden>Cancelar edição</button>
+        </form>
+      </section>
+      <section class="surface task-panel" aria-labelledby="list-title"><div class="panel-heading list-panel-heading"><div class="panel-icon">▤</div><div><h2 id="list-title">Seu planejamento</h2><p id="task-summary">Carregando atividades...</p></div></div>
+        <div class="list-controls"><div class="search-wrap"><span aria-hidden="true">⌕</span><label class="sr-only" for="task-search">Buscar atividades</label><input id="task-search" type="search" placeholder="Buscar atividade..."></div><label class="sr-only" for="task-filter">Filtrar atividades</label><select id="task-filter" aria-label="Filtrar tarefas"><option value="todas">Todas</option><option value="pendentes">Pendentes</option><option value="concluidas">Concluídas</option></select></div>
+        <div class="task-progress"><div class="mini-progress-text"><strong>Seu progresso</strong><span id="task-progress-text">0 de 0 concluídas</span></div><div class="progress-track"><div class="progress-fill" id="task-progress"></div></div></div>
+        <div class="task-list" id="task-list" aria-live="polite"></div>
+        <p class="demo-note">Os dados são salvos neste navegador usando JavaScript e localStorage.</p>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand footer-brand" href="index.html"><span class="brand-mark">✦</span> Estuda<span class="brand-plus">+</span></a><p>Projeto acadêmico • Organização de estudos</p><span>2026</span></div></footer>
+</body>
+</html>
