@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Estuda+ — um organizador simples para planejar seus estudos, matérias e atividades.">
+  <title>Estuda+ | Início</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#conteudo">Pular para conteúdo</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Estuda+ — página inicial"><span class="brand-mark">✦</span> Estuda<span class="brand-plus">+</span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">☰</button>
+      <nav class="main-nav" id="menu-principal" aria-label="Menu principal">
+        <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+        <a class="nav-link" href="atividades.html">Atividades</a>
+        <a class="nav-link" href="contato.html">Contato</a>
+        <a class="nav-link nav-extra" href="materias.php">Matérias <span class="mini-tag">PHP extra</span></a>
+      </nav>
+    </div>
+  </header>
+  <main id="conteudo">
+    <section class="hero container">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> SUA ROTINA, MAIS LEVE</div>
+        <h1>Organize o estudo.<br><span class="gradient-text">Conquiste o próximo passo.</span></h1>
+        <p>Atividades, prazos e progresso em um só lugar. Um espaço simples para você focar no que realmente importa: aprender.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="atividades.html">Organizar atividades <span aria-hidden="true">↗</span></a><a class="btn btn-light" href="#como-funciona">Como funciona</a></div>
+        <div class="hero-note"><span class="avatar-stack"><span>M</span><span>J</span><span>A</span></span> Seu semestre, no seu ritmo.</div>
+      </div>
+      <div class="hero-visual" aria-label="Visualização ilustrativa da organização de estudos">
+        <div class="orb orb-one"></div><div class="orb orb-two"></div>
+        <div class="floating-card week-tag"><span class="calendar-icon">▦</span><span><strong>Boa semana!</strong><small>Um dia de cada vez</small></span></div>
+        <div class="preview-card">
+          <div class="preview-top"><div><small>SEU PAINEL</small><h2>Visão geral</h2></div><span class="preview-logo">✦</span></div>
+          <div class="mini-progress"><div class="mini-progress-text"><span>Seu progresso</span><strong id="hero-progress-label">0%</strong></div><div class="progress-track"><div class="progress-fill" id="hero-progress"></div></div></div>
+          <div class="preview-items"><div class="preview-row"><span class="preview-checkbox done">✓</span><span>Revisar conteúdo</span><span class="pill neutral">feito</span></div><div class="preview-row"><span class="preview-checkbox"></span><span>Preparar apresentação</span><span class="pill lavender">hoje</span></div><div class="preview-row"><span class="preview-checkbox"></span><span>Estudar matemática</span><span class="pill peach">em breve</span></div></div>
+        </div>
+        <div class="floating-card star-tag"><span>✳</span><strong>Pequenos passos, grandes resultados.</strong></div>
+      </div>
+    </section>
+    <section class="container stats-section" aria-label="Resumo das atividades">
+      <div class="stat-card"><div class="stat-icon violet">▤</div><div><strong id="stat-total">0</strong><span>atividades cadastradas</span></div></div>
+      <div class="stat-card"><div class="stat-icon mint">✓</div><div><strong id="stat-done">0</strong><span>atividades concluídas</span></div></div>
+      <div class="stat-card"><div class="stat-icon orange">◷</div><div><strong id="stat-pending">0</strong><span>atividades pendentes</span></div></div>
+    </section>
+    <section class="container section" id="como-funciona"><div class="section-heading"><div><span class="section-kicker">DO PLANO À PRÁTICA</span><h2>Seu caminho, sem complicação.</h2></div><p>Três passos para transformar uma lista de tarefas em uma rotina mais organizada.</p></div>
+      <div class="feature-grid"><article class="feature-card"><span class="feature-num">01</span><div class="feature-art art-violet">✎</div><h3>Cadastre</h3><p>Adicione as atividades com matéria, prioridade e prazo.</p></article><article class="feature-card"><span class="feature-num">02</span><div class="feature-art art-mint">◫</div><h3>Acompanhe</h3><p>Filtre as pendências e veja como está o seu progresso.</p></article><article class="feature-card"><span class="feature-num">03</span><div class="feature-art art-peach">★</div><h3>Conclua</h3><p>Marque tarefas como feitas e celebre cada avanço.</p></article></div>
+    </section>
+    <section class="container callout"><div><span class="section-kicker">PRONTO PARA COMEÇAR?</span><h2>Seu próximo objetivo começa agora.</h2><p>Monte sua lista de atividades e acompanhe seu progresso.</p></div><a href="atividades.html" class="btn btn-white">Ver minhas atividades <span aria-hidden="true">↗</span></a></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><span class="brand footer-brand"><span class="brand-mark">✦</span> Estuda<span class="brand-plus">+</span></span><p>Projeto acadêmico • HTML, CSS, JavaScript e PHP (extra)</p><span>2026</span></div></footer>
+</body>
+</html>

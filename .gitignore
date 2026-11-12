@@ -1,0 +1,4 @@
+storage/*.sqlite
+storage/*.sqlite-shm
+storage/*.sqlite-wal
+.DS_Store
